@@ -1,0 +1,154 @@
+.main-room-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.room-head {
+  flex: 1;
+  min-width: 300px;
+}
+
+.room-right-head {
+  flex: 1;
+  min-width: 300px;
+}
+
+.room-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-img {
+  width: 100%;
+}
+
+.roomimg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.room-des {
+  padding: 20px;
+  background: white;
+}
+
+.room-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.room-description {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.room-description.expanded {
+  -webkit-line-clamp: unset;
+  display: block;
+}
+
+.read-more-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #448000;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.read-more-button:hover {
+  color: #336600;
+}
+
+.iconer svg {
+  transition: transform 0.3s ease;
+}
+
+.room-details-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: #448000;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  padding: 8px 0;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-room-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .room-div {
+    flex-direction: column;
+  }
+  
+  .roomimg {
+    height: 200px;
+  }
+  
+  .room-description {
+    -webkit-line-clamp: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .room-title {
+    font-size: 1.3rem;
+  }
+  
+  .room-description {
+    font-size: 0.9rem;
+  }
+  
+  .read-more-button {
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .list-item {
+    font-size: 0.9rem;
+  }
+}

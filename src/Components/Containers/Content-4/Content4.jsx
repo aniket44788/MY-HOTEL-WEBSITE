@@ -1,0 +1,37 @@
+import React from 'react'
+import "./content4.css";
+const exploreItems = [
+    { image: "room.jpg", label: "Rooms" },
+    { image: "dining.jpg", label: "Dining" },
+    { image: "gym.jpg", label: "Fitness Centre" },
+    { image: "meetingroom.jpg", label: "Meeting Events" },
+    { image: "pool.jpg", label: "Pool" },
+    { image: "spa.jpg", label: "Spa" },
+    { image: "bar.jpg", label: "Bar" },
+    { image: "gallery.jpg", label: "Gallery" },
+    { image: "attraction.jpg", label: "Attractions" },
+    { image: "parking.jpg", label: "Free Parking" },
+  ];
+function Content4() {
+
+  return (
+    <>
+    <div className="content4-head">
+
+    <div className="explore-section">
+      <h2 className="explore-title">Explore More</h2>
+      <div className="explore-grid">
+        {exploreItems.map((item, index) => (
+          <div key={index} className="explore-card">
+            <img src={`/images/${item.image}`} alt={item.label} />
+            <p>{item.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    </div>
+    </>
+  )
+}
+
+export default Content4

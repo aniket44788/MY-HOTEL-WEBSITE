@@ -1,0 +1,70 @@
+.booking-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  .booking-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 180px;
+    min-width: 160px;
+    cursor: pointer;
+
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+    cursor: pointer;
+
+  }
+  
+  .form-group select,
+  .form-group input,
+  .form-group .react-datepicker-wrapper {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+
+  }
+  
+  .book-btn {
+    margin-top: 24px;
+    padding: 10px 20px;
+    background-color: #3a8d3f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .book-btn:hover {
+    background-color: #2f7233;
+  }
+  
