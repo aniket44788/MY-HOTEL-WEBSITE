@@ -49,7 +49,7 @@ function Room() {
   };
 
   const { checkInOut, amenities, otherServices } = roomDetails;
-  
+
   const renderList = (title, items) => (
     <div className="section">
       <h3 className="section-title">{title}</h3>
@@ -66,25 +66,82 @@ function Room() {
       id: 1,
       image: roomimg,
       title: "Superior Room",
-      description: "The Deluxe Rooms with private balcony are tastefully decorated amidst the beautiful view of the Pine forest. Enjoy our bright & airy deluxe room with unobstructed view of valley & Mountains."
-    },
+      intro: "The Deluxe Rooms with private balcony are tastefully decorated amidst the beautiful view of the Pine forest. Enjoy our bright & airy deluxe room with unobstructed view of valley & mountains.",
+      amenities: [
+        "One king bed",
+        "49” LCD Smart TV",
+        "Complimentary morning yoga and meditation session and morning nature walk",
+        "Bathroom with walk-in shower and wardrobe",
+        "Premium bath amenities",
+        "Large, openable windows",
+        "In-room safe",
+        "Complimentary Soulfilling Tea Tales experience",
+        "Complimentary high-speed Wi-Fi across the resort",
+        "24-hour in-room dining",
+        "Access to resort services and amenities: fitness centre, spa, temperature-controlled indoor pool, meditation room, sedar deck, steam sauna, concierge, and all complimentary activities organized at or outside the resort"
+      ]
+    }
+
+
+    ,
     {
       id: 2,
       image: gallery,
       title: "Deluxe Room",
-      description: "The Superior rooms offer king-size beds to provide our guests, a comfortable good night's sleep in the panoramic view of the spectacular Kangra Valley & Dhauladhar Mountains."
+      intro: "The Superior rooms offer king-size beds to provide our guests, a comfortable good night's sleep in the panoramic view of the spectacular Kangra Valley & Dhauladhar Mountains ",
+      amenities: [
+        "One king bed",
+        "49” LCD Smart TV",
+        "Complimentary morning yoga and meditation session and morning nature walk",
+        "Bathroom with walk-in shower and wardrobe",
+        "Premium bath amenities",
+        "Large, openable windows",
+        "In-room safe",
+        "Complimentary Soulfilling Tea Tales experience",
+        "Complimentary high-speed Wi-Fi across the resort",
+        "24-hour in-room dining",
+        "Access to resort services and amenities: fitness centre, spa, temperature-controlled indoor pool, meditation room, sedar deck, steam sauna, concierge, and all complimentary activities organized at or outside the resort"
+      ]
+    
+    
     },
     {
       id: 3,
       image: dining,
       title: "Executive Room",
-      description: "Experience the elegance of our Executive Rooms featuring modern amenities and a private balcony with stunning views of the Dhauladhar Mountains and pine forest."
+      intro: "Experience the elegance of our Executive Rooms featuring modern amenities and a private balcony with stunning views of the Dhauladhar Mountains and pine forest.",
+      amenities: [
+        "One king bed",
+        "49” LCD Smart TV",
+        "Complimentary morning yoga and meditation session and morning nature walk",
+        "Bathroom with walk-in shower and wardrobe",
+        "Premium bath amenities",
+        "Large, openable windows",
+        "In-room safe",
+        "Complimentary Soulfilling Tea Tales experience",
+        "Complimentary high-speed Wi-Fi across the resort",
+        "24-hour in-room dining",
+        "Access to resort services and amenities: fitness centre, spa, temperature-controlled indoor pool, meditation room, sedar deck, steam sauna, concierge, and all complimentary activities organized at or outside the resort"
+      ]
     },
     {
       id: 4,
       image: spa,
       title: "Jr. Suite",
-      description: "Experience the elegance of our Executive Rooms featuring modern amenities and a private balcony with stunning views of the Dhauladhar Mountains and pine forest."
+      intro: "Experience the elegance of our Executive Rooms featuring modern amenities and a private balcony with stunning views of the Dhauladhar Mountains and pine forest.",
+      amenities: [
+        "One king bed",
+        "49” LCD Smart TV",
+        "Complimentary morning yoga and meditation session and morning nature walk",
+        "Bathroom with walk-in shower and wardrobe",
+        "Premium bath amenities",
+        "Large, openable windows",
+        "In-room safe",
+        "Complimentary Soulfilling Tea Tales experience",
+        "Complimentary high-speed Wi-Fi across the resort",
+        "24-hour in-room dining",
+        "Access to resort services and amenities: fitness centre, spa, temperature-controlled indoor pool, meditation room, sedar deck, steam sauna, concierge, and all complimentary activities organized at or outside the resort"
+      ]
     }
   ];
 
@@ -99,10 +156,20 @@ function Room() {
               </div>
               <div className="room-des">
                 <h5 className='room-title'>{item.title}</h5>
-                <div className={`room-description ${expandedRooms[item.id] ? 'expanded' : ''}`}>
-                  {item.description}
+                <div className={`room-intro ${expandedRooms[item.id] ? 'expanded' : ''}`}>
+                  {item.intro}
+
+                  {expandedRooms[item.id] && item.amenities && (
+                    <ul className="amenities-list">
+                      {item.amenities.map((amenity, index) => (
+                        <li key={index} className="amenity-item">✔ {amenity}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-                <button 
+
+
+                <button
                   className="read-more-button"
                   onClick={() => toggleRoomExpansion(item.id)}
                 >
@@ -110,10 +177,10 @@ function Room() {
                     {expandedRooms[item.id] ? 'Read Less' : 'Read More'}
                   </p>
                   <p className="iconer">
-                    <svg 
-                      height="24" 
-                      width="24" 
-                      viewBox="0 0 24 24" 
+                    <svg
+                      height="24"
+                      width="24"
+                      viewBox="0 0 24 24"
                       style={{ transform: expandedRooms[item.id] ? 'rotate(90deg)' : 'rotate(0deg)' }}
                     >
                       <path d="M0 0h24v24H0z" fill="none"></path>
