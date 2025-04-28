@@ -8,6 +8,7 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
+    console.log("Toggling menu");
     setShowMenu(!showMenu);
   };
 

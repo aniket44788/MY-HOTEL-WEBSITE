@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
 }
@@ -45,7 +45,6 @@
   padding: 8px 16px;
   cursor: pointer;
   transition: color 0.3s ease;
-  
 }
 .nav-head-items ul li a {
   text-decoration: none;
@@ -56,7 +55,7 @@
 }
 
 .nav-head-items ul li::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
@@ -97,6 +96,10 @@
     display: none;
     width: 100%;
     margin-top: 10px;
+    position: absolute;
+    z-index: 999;
+    top: 70px;
+    background-color: white;
   }
 
   .nav-head-items.open {
@@ -124,7 +127,8 @@
   }
 
   .hotel-logo-png {
-    width: 40%;
-    height: auto;
+    width: 25%;
+    height: 100px;
+    padding-bottom: 10px;
   }
 }
