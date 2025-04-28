@@ -23,11 +23,11 @@ function Navbar() {
         </div>
 
         <div className={`nav-head-items ${showMenu ? "open" : ""}`}>
-          <ul>
-            <li><Link to="/" onClick={closeMenu}>HOME</Link></li>
+          <ul> 
+            <li><Link to="/" onClick={closeMenu}> HOME</Link></li>
             <li><Link to="/Room" onClick={closeMenu}>ROOMS</Link></li>
             <li><Link to="/dining" onClick={closeMenu}>DINING</Link></li>
-            <li><Link to="/gallery" onClick={closeMenu}>GALLERY</Link></li>
+            <li><Link to="/activities" onClick={closeMenu}>ACTIVITIES</Link></li>
             <li><Link to="/contact" onClick={closeMenu}>CONTACT US</Link></li>
             <li><Link to="/about" onClick={closeMenu}>ABOUT US</Link></li>
           </ul>
