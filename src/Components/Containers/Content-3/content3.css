@@ -13,6 +13,7 @@
   }
   
   .section-title {
+    height: 30px;
     font-size: 2.25rem;
     font-weight: 700;
     color: #448000;
@@ -23,6 +24,7 @@
     margin-bottom: 40px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    /* border:  2px solid red; */
   }
   
   .section-title::after {
@@ -44,6 +46,7 @@
     grid-template-columns: repeat(6, 1fr); /* 6 columns = 2 rows of 6 max */
     gap: 40px 30px; /* row-gap column-gap */
     justify-items: center;
+    /* border:  2px solid red; */
   }
   
   .facility-box {

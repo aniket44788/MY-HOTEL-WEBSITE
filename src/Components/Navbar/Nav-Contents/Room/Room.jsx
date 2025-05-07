@@ -102,8 +102,8 @@ function Room() {
         "24-hour in-room dining",
         "Access to resort services and amenities: fitness centre, spa, temperature-controlled indoor pool, meditation room, sedar deck, steam sauna, concierge, and all complimentary activities organized at or outside the resort"
       ]
-    
-    
+
+
     },
     {
       id: 3,
