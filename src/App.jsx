@@ -7,6 +7,8 @@ import Dining from "./Components/Navbar/Nav-Contents/Dining/Dining";
 import Contact from "./Components/Navbar/Nav-Contents/Contact/Contact";
 import About from "./Components/Navbar/Nav-Contents/About/About"
 import Activities from "./Components/Navbar/Nav-Contents/Activities/Activities"
+// import { Analytics } from "@vercel/analytics/next"
+
 function App() {
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
+    {/* <Analytics/> */}
       
     </>
   )

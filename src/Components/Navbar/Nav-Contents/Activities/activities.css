@@ -73,3 +73,59 @@
   background: linear-gradient(to right, #e0e7ff, #c7d2fe);
 }
 
+
+
+
+
+
+@media (max-width: 1024px) {
+  .allContents {
+    height: auto;
+  }
+
+  .con-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery.head {
+    padding: 1.5rem;
+  }
+
+  .con-image {
+    height: 400px;
+  }
+
+  .allContents h2:last-of-type {
+    font-size: 1.3rem;
+  }
+
+  .allContents p {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .con-image {
+    height: 200px;
+    width: 100%;
+  }
+
+  .allContents {
+    padding: 0.75rem;
+  }
+
+  .allContents h2:first-of-type {
+    font-size: 0.75rem;
+  }
+
+  .allContents h2:last-of-type {
+    font-size: 1.1rem;
+  }
+
+  .allContents p {
+    font-size: 0.95rem;
+  }
+}

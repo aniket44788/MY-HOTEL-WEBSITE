@@ -38,6 +38,7 @@ function Navbar() {
           <GiHamburgerMenu />
         </button>
       </div>
+      
     </>
   );
 }
