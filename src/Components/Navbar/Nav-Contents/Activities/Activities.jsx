@@ -13,7 +13,6 @@ import Content6 from '../../../Containers/Content-6/Content6'
 import "./activities.css"
 function Activities() {
 
-
   const activities = [{
     id: 1,
     title: "YOGA CLASSES",
