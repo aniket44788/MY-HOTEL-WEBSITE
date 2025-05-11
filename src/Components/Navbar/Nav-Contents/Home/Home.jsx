@@ -9,7 +9,7 @@ import Content6 from "../../../Containers/Content-6/Content6"
 function Home() {
   return (
     <>
-    <Content1/>x
+    <Content1/>
       <HotelBooking />
       <Content2 />
       <Content3 />

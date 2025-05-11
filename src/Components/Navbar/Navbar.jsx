@@ -29,7 +29,7 @@ function Navbar() {
             <li><Link to="/Room" onClick={closeMenu}>ROOMS</Link></li>
             <li><Link to="/dining" onClick={closeMenu}>DINING</Link></li>
             <li><Link to="/activities" onClick={closeMenu}>ACTIVITIES</Link></li>
-            <li><Link to="/contact" onClick={closeMenu}>CONTACT US</Link></li>
+            {/* <li><Link to="/contact" onClick={closeMenu}>CONTACT US</Link></li> */}
             <li><Link to="/about" onClick={closeMenu}>ABOUT US</Link></li>
           </ul>
         </div>

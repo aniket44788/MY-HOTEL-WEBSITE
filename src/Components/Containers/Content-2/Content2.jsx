@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "./content2.css"
 import hlogo from "../Images/hotel-png.png"
 function Content2() {
- const [showFullText, setShowFullText] = useState(false)
 
   return (
     <div className="content-data">
