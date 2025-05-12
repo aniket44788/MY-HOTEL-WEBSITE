@@ -75,6 +75,7 @@ import "./bookingpage.css";
             selected={checkIn}
             onChange={(date) => setCheckIn(date)}
             dateFormat="dd/MM/yyyy"
+            minDate={new Date()}  // 👈 This prevents past dates
           />
         </div>
 
@@ -84,6 +85,7 @@ import "./bookingpage.css";
             selected={checkOut}
             onChange={(date) => setCheckOut(date)}
             dateFormat="dd/MM/yyyy"
+              minDate={checkIn} 
           />
         </div>
 

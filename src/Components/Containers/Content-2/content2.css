@@ -82,6 +82,9 @@
     .content-heading-des {
       font-size: 0.9rem;
     }
+.content-des {
+  width: 100%;
+}
   
     .img-logo {
       width: 100%;
