@@ -151,11 +151,12 @@
 
   
 .room-details-container {
-  width: 380px;
+  width: 300px;
   background: rgb(255, 253, 253);
   /* padding: 20px; */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid red; */
 }
 
 
