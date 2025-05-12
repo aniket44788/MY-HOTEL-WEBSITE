@@ -133,6 +133,15 @@
     flex-direction: column;
     gap: 20px;
   }
+  .room-details-container {
+  width: 450px;
+  background: rgb(255, 253, 253);
+  padding-left: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid red; */
+}
+
   
   .room-div {
     flex-direction: column;
