@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+
 import "./content2.css"
 import hlogo from "../Images/hotel-png.png"
 function Content2() {
 
   return (
-    <div className="content-data">
+    <div className="content-data ">
         <div className="content-logo"> <img src={hlogo} alt="" className='img-logo' /> </div>
         <div className="content-des">
             <div className="content-heading-title"> About us</div>
