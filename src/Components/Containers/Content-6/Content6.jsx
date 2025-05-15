@@ -84,7 +84,7 @@ function Content6() {
             </p>
           </div>
         </div>
-        <p className="footer-copy" data-aos = "fade-up">
+        <p className="footer-copy" >
           © 2021 All rights reserved Hotel White Mountain .
           <br /> Website Designed
           & Developed by Aniket Bhardwaj.
