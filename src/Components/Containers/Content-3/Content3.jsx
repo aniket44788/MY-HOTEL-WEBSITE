@@ -26,7 +26,7 @@ function Content3() {
     { icon: <FaTshirt />, label: "Laundry" },
   ];
   return (
-    <div className="content3-headbox">
+    <div className="content3-headbox" data-aos = "fade-up">
       <h2 className="section-title">Hotel Facilities</h2>
       <div className="facilities-grid">
         {facilities.map((item, index) => (

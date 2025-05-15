@@ -12,7 +12,7 @@ const images = [
 
 function Content1() {
   return (
-    <div className="content-box">
+    <div className="content-box"m data-aos = "fade-up">
       <div className="App">
         <CustomSlider>
           {images.map((image, index) => (

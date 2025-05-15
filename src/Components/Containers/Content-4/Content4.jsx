@@ -17,7 +17,7 @@ const exploreItems = [
 
 function Content4() {
   return (
-    <div className="content4-head">
+    <div className="content4-head" data-aos = "fade-up">
       <div className="explore-section">
         <h2 className="explore-title">Explore More</h2>
         <div className="explore-grid">

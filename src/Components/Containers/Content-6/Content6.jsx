@@ -13,7 +13,7 @@ import { MdPhoneInTalk } from "react-icons/md";
 function Content6() {
   return (
     <>
-      <div className="content6-head">
+      <div className="content6-head" data-aos = "fade-up">
         <div className="contact-wrapper">
           {/* Left Column */}
           <div className="contact-left">
@@ -39,7 +39,7 @@ function Content6() {
           </div>
 
           {/* Middle Column - Form */}
-          <div className="contact-middle">
+          <div className="contact-middle"data-aos = "fade-up" >
             <h2>CONTACT US</h2>
             <p>Feel free to reach us</p>
             <form>
@@ -51,7 +51,7 @@ function Content6() {
           </div>
 
           {/* Right Column - Info */}
-          <div className="contact-right">
+          <div className="contact-right" data-aos = "fade-up">
             <h3>Landline</h3>
             <p>
               <FaPhoneAlt /> 01892-295101
@@ -84,7 +84,7 @@ function Content6() {
             </p>
           </div>
         </div>
-        <p className="footer-copy">
+        <p className="footer-copy" data-aos = "fade-up">
           © 2021 All rights reserved Hotel White Mountain .
           <br /> Website Designed
           & Developed by Aniket Bhardwaj.

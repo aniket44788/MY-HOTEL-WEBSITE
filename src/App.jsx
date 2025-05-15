@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react'
+import {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Navbar/Nav-Contents/Home/Home';
 import Room from './Components/Navbar/Nav-Contents/Room/Room';
@@ -10,6 +12,14 @@ import Activities from "./Components/Navbar/Nav-Contents/Activities/Activities"
 // import { Analytics } from "@vercel/analytics/next"
 
 function App() {
+   useEffect(() => {
+    Aos.init({
+      once: false, // Animation will happen only once
+      duration: 1000, // Set the duration of the animation (in ms)
+      delay: 100, // Set a delay before the animation starts (in ms)
+      easing: "ease-in-out", // Easing function for the animation
+    });
+  }, []);
   return (
     <>
      <Router>
