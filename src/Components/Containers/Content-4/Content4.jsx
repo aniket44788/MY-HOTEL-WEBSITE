@@ -23,7 +23,7 @@ function Content4() {
         <div className="explore-grid">
           {exploreItems.map((item, index) => {
             const cardContent = (
-              <div key={index} className="explore-card">
+              <div key={index} className="e-explore-card">
                 <img src={`/images/${item.image}`} alt={item.label} />
                 <p>{item.label}</p>
               </div>
