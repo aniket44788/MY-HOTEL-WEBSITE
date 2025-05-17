@@ -14,7 +14,7 @@ function AboutResort() {
   
     <section className="about-section">
       <h4 className="sub-title">Who We Are</h4>
-      <h1 className="main-title">About Hotel Mountain View , DHARAMSHALA 9</h1>
+      <h1 className="main-title">About Hotel Mountain View , DHARAMSHALA </h1>
       <div className="cards-container">
         {stats.map(stat => (
           <div key={stat.id} className="info-card">
