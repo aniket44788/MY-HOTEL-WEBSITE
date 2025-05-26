@@ -1,106 +1,72 @@
-.container__slider {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    /* border:  2px solid blue; */
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    object-fit: cover;
-    background-color: rgb(255, 255, 255);
-  }
+/* === SLIDER STYLES === */
+.slider-container {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   
-  .container__slider > button {
-    background-color: transparent;
-    outline: none;
-    border: 0;
-    color: whitesmoke;
-    font-size: 24px;
+}
+
+/* === NAVIGATION BUTTONS === */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slider-button.left {
+  left: 10px;
+}
+
+.slider-button.right {
+  right: 10px;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+  .slider-container {
+    height: 400px;
+    margin-bottom: -30px;
   }
-  
-  .container__slider > button:active {
-    color: black;
+
+  .slider-button {
+    font-size: 20px;
+    padding: 10px 14px;
   }
-  
-  .slider__btn-next {
-    position: absolute;
-    right: 0;
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    height: 300px;
   }
-  
-  .slider__btn-prev {
-    position: absolute;
-    left: 0;
+
+  .slider-button {
+    font-size: 18px;
+    padding: 8px 12px;
   }
-  
-  .container__slider__links {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .container__slider__links-small {
-    position: relative;
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    border-radius: 50%;
-    outline: none;
-    border: 0;
-    background-color: white;
-    border: 1px solid grey;
-    transition: background-color 1s ease;
-    margin: 0 2px;
-  }
-  
-  .container__slider__links-small-active {
-    background-color: black;
-  }
-  
-  .slider__item {
-    box-sizing: border-box;
-    min-width: 100%;
-    height: auto;
-    overflow: hidden;
-    object-fit: cover;
-    height: auto;
-    transform: translateX(0);
-    transition: transform 1s ease;
-  }
-  
-  .slider__item-active-1 {
-    transform: translateX(0);
-  }
-  
-  .slider__item-active-2 {
-    transform: translateX(-100%);
-  }
-  
-  .slider__item-active-3 {
-    transform: translateX(-200%);
-  }
-  
-  .slider__item-active-4 {
-    transform: translateX(-300%);
-  }
-  
-  .slider__item-active-5 {
-    transform: translateX(-300%);
-  }
-  
-  .slider__item-active-6 {
-    transform: translateX(-300%);
-  }
-  
-  .slider__item-active-7 {
-    transform: translateX(-300%);
-  }
-  
-  .slider__item img {
-    width: 100%;
-    height: auto;
-  }
-  
+}
